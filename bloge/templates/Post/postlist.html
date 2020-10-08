@@ -1,0 +1,6 @@
+<h1>this post_list</h1>
+
+{% for post in posts %}
+    <h4> <a href="{% url 'bloge:post' post.id %}"> {{post}} </a> </h4>
+{% endfor %}
+<a style="color:aqua", href="{%url 'bloge:new'%}" }  >add newpost </a>
